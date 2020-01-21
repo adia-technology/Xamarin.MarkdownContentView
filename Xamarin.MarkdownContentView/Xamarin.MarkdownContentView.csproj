@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1</Version>
+    <Description>Multiplatform library that makes it easy to render markup documents in  your Xamarin application.</Description>
+    <Authors>Marcin Kurtz</Authors>
+    <Copyright>Adia, Just in time staffing AG</Copyright>
+    <Company>Adia</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/adia-technology/Xamarin.MarkdownContentView</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/adia-technology/Xamarin.MarkdownContentView</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>markdown, xamarin</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Markdig" Version="0.18.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991477" />
+  </ItemGroup>
+
+</Project>
