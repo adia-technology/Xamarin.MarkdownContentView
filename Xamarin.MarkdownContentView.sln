@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.MarkdownContentView", "Xamarin.MarkdownContentView.csproj", "{0BB08A43-920E-4F1C-BBF5-6FABA1F19D1F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.MarkdownContentView", ".\Xamarin.MarkdownContentView\Xamarin.MarkdownContentView.csproj", "{0BB08A43-920E-4F1C-BBF5-6FABA1F19D1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.MarkdownContentView.Tests", "..\Xamarin.MarkdownContentView.Tests\Xamarin.MarkdownContentView.Tests.csproj", "{13540401-4EB2-4335-B5D6-2006BB49AE06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.MarkdownContentView.Tests", ".\Xamarin.MarkdownContentView.Tests\Xamarin.MarkdownContentView.Tests.csproj", "{13540401-4EB2-4335-B5D6-2006BB49AE06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
