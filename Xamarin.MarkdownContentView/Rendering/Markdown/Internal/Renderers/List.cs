@@ -59,6 +59,10 @@ namespace Xamarin.MarkdownContentView.Rendering.Markdown.Internal.Renderers
                     TextColor = theme.Paragraph.ForegroundColor,
                     VerticalOptions = LayoutOptions.Start,
                     HorizontalOptions = LayoutOptions.End,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                    VerticalTextAlignment = TextAlignment.Center,
+                    LineBreakMode = LineBreakMode.NoWrap,
+                    Margin = new Thickness(0, 3, 0, 0)
                 };
             }
             else
@@ -67,10 +71,10 @@ namespace Xamarin.MarkdownContentView.Rendering.Markdown.Internal.Renderers
                 {
                     WidthRequest = 4,
                     HeightRequest = 4,
-                    Margin = new Thickness(0, 6, 0, 0),
+                    Margin = new Thickness(0, 10, 0, 0),
                     BackgroundColor = theme.Paragraph.ForegroundColor,
                     VerticalOptions = LayoutOptions.Start,
-                    HorizontalOptions = LayoutOptions.Center,
+                    HorizontalOptions = LayoutOptions.Center
                 };
             }
 
