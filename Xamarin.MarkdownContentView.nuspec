@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Xamarin.MarkdownContentView</id>
+    <version>$Version$</version>
+    <authors>Marcin Kurtz</authors>
+    <owners>Adia Technology</owners>
+    <license type="expression">MIT</license> 
+    <projectUrl>https://github.com/adia-technology/Xamarin.MarkdownContentView</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A cross-platform library for rendering markdown in a content view</description>
+    <releaseNotes>Created an initial version.</releaseNotes>
+    <copyright>Copyright 2019 Adia, Just in time staffing AG</copyright>
+    <tags>Xamarin Markdown</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Markdig" version="0.18.0" />
+        <dependency id="Xamarin.Forms" version="4.4.0.991477" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Xamarin.MarkdownContentView\bin\$Configuration$\netstandard2.0\*.dll" target="lib\netstandard2.0" />
+  </files>
+</package>
