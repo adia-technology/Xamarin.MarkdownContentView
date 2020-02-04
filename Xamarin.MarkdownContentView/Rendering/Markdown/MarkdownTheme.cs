@@ -71,10 +71,12 @@ namespace Xamarin.MarkdownContentView.Rendering.Markdown
             {
                 case Device.iOS:
                     Code.FontFamily = "Courier";
+                    ListItemThickness = new Thickness(0, 3, 0, 0);
                     break;
 
                 case Device.Android:
                     Code.FontFamily = "monospace";
+                    ListItemThickness = new Thickness(0, 0, 0, 0);
                     break;
             }
         }
@@ -104,6 +106,8 @@ namespace Xamarin.MarkdownContentView.Rendering.Markdown
         public float Margin { get; set; } = 10;
 
         public double LineHeight { get; set; } = 1.2;
+
+        public Thickness ListItemThickness { get; set; }
 
         public class LightMarkdownTheme : MarkdownTheme
         {

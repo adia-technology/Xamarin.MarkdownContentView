@@ -45,38 +45,21 @@ namespace Xamarin.MarkdownContentView.Rendering.Markdown.Internal.Renderers
             var horizontalStack = new StackLayout
             {
                 Orientation = StackOrientation.Horizontal,
-                Margin = new Thickness(theme.Margin, 0, 0, 0),
+                Margin = new Thickness(theme.Margin, 0, 0, 0)
             };
 
-            View bullet;
-
-            if (list.IsOrdered)
+            var bullet = new Label
             {
-                bullet = new Label
-                {
-                    Text = $"{index}.",
-                    FontSize = theme.Paragraph.FontSize,
-                    TextColor = theme.Paragraph.ForegroundColor,
-                    VerticalOptions = LayoutOptions.Start,
-                    HorizontalOptions = LayoutOptions.End,
-                    HorizontalTextAlignment = TextAlignment.Center,
-                    VerticalTextAlignment = TextAlignment.Center,
-                    LineBreakMode = LineBreakMode.NoWrap,
-                    Margin = new Thickness(0, 3, 0, 0)
-                };
-            }
-            else
-            {
-                bullet = new BoxView
-                {
-                    WidthRequest = 4,
-                    HeightRequest = 4,
-                    Margin = new Thickness(0, 10, 0, 0),
-                    BackgroundColor = theme.Paragraph.ForegroundColor,
-                    VerticalOptions = LayoutOptions.Start,
-                    HorizontalOptions = LayoutOptions.Center
-                };
-            }
+                Text = list.IsOrdered ? $"{index}." : "\u2981",
+                FontSize = theme.Paragraph.FontSize,
+                TextColor = theme.Paragraph.ForegroundColor,
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Center,
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center,
+                LineBreakMode = LineBreakMode.NoWrap,
+                Margin = theme.ListItemThickness
+            };
 
             horizontalStack.Children.Add(bullet);
             horizontalStack.Children.Add(_render.Render(itemBlock.AsEnumerable(), theme));
